@@ -45,6 +45,8 @@ public class AmbulansServiceImpl implements AmbulansService {
         }if(dto.platnomor() != null){
             entity.setPlatnomor(dto.platnomor());
         }
+        entity.setStatus(dto.status());
+        
         return ambulansRepository.save(entity);
     }
 
